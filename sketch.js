@@ -47,9 +47,9 @@ function draw() {
     fill(balloon["r"], balloon["g"], balloon["b"]);
 
     text(balloon["char"], balloon["x"] + (s*150) + 100, balloon["y"] + 200);
-    balloon["y"] -= 1;
-    balloon["angle"] += 1;
-    if(balloon["angle"] == 360) {
+    balloon["y"] -= 3;
+    balloon["angle"] += 3;
+    if(balloon["angle"] >= 360) {
       balloon["angle"] = 0;
     }
   }
